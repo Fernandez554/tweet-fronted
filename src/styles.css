@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.box-tweet{
+    resize: none;
+    height:auto;
+    min-height:50px;
+}
+.box-tweet:focus{
+    border: none;
+    border-color: none !important;
+    outline: none;
+}
