@@ -1,28 +1,30 @@
-<div class="row">
-    <div class="col-12 col-md-4 offset-md-4 text-center border rounded">
-        <div class="w-100 mt-2 d-flex justify-content-end p-1">
-            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <div class="row justify-content-center mx-2">
+    
+</div> -->
+    <div class="text-center border-primary  border-top border-3 px-4 rounded add-tweet-container" >
+        <div class="w-100 mt-2 d-flex flex-row mt-4 ">
+            <textarea class="box-tweet border-0 mt-1 fs-4 px-2 flex-fill" placeholder="Que estás pensando hoy?"
+            [(ngModel)]="tweetobj.descripcion"></textarea>
+            <button type="button" class="btn btn-primary btn-sm align-self-start" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="bi bi-arrows-fullscreen"></i>
             </button>
         </div>
-        <textarea class="box-tweet border-0 w-100 mt-1 fs-4 p-2" placeholder="Que estás pensando hoy?"
-            [(ngModel)]="tweetobj.descripcion"></textarea>
+        
         <hr class="w-100">
         <div class="row mb-3">
             <div class="col-12 col-md-6 ">
-                <div class="d-flex justify-content-start p-1">
+                <div class="d-flex justify-content-start">
                     {{ 100 - tweetobj.descripcion.length }}/100
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class="d-flex justify-content-end p-1">
+                <div class="d-flex justify-content-end">
                     <button id="publicar" class="btn btn-sm btn-primary" (click)="publicar()">Publicar</button>
                 </div>
             </div>
         </div>
+        
     </div>
-    <div class="clearfix"></div>
-</div>
 
 
 
@@ -49,7 +51,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="d-flex justify-content-end p-1">
-                                        <button id="publicar" class="btn btn-sm btn-outline-info mx-1"
+                                        <button id="publicar" class="btn btn-sm btn-outline-secondary mx-1"
                                             data-bs-dismiss="modal" (click)="inicializar()">Cerrar</button>
                                         <button id="publicar" class="btn btn-sm btn-primary" (click)="publicar()">Publicar</button>
                                     </div>

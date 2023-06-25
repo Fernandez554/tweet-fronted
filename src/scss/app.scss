@@ -1,0 +1,58 @@
+$primary:       #0077b6ff;
+$secondary:     #0096c7ff;
+$success:       #023e8aff;
+$light:         #ade8f4ff;
+$dark:          #03045eff;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.add-tweet-container, .profile-card-2 {
+    border-left: 1px solid #ebebeb !important; 
+    border-right: 1px solid #ebebeb !important;
+    border-bottom-color : 1px solid #ebebeb !important;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.box-tweet{
+    resize: none;
+    height:auto;
+    min-height:50px;
+}
+.box-tweet:focus{
+    border: none;
+    border-color: none !important;
+    outline: none;
+}
+
+/*Profile card 2*/
+.profile-card-2 .profile{
+    border-radius: 50%;
+}
+.profile-card-2 h5{
+    font-weight:600;
+}
+.profile-card-2 .card-text{
+    font-weight:300;
+    font-size:15px;
+}
+.profile-card-2 .icon-block{
+    float:left;
+    width:100%;
+}
+.profile-card-2 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-2 i {
+  display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card-2 i:hover {
+  color:#333;
+}
